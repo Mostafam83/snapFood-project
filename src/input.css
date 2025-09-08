@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* دسکتاپ: ردیف اول 6 کارت، ردیف دوم 5 کارت، فاصله مناسب */
+#snap1, #snap2, #snap3, #snap4, #snap5, #snap6 { width: 15%; margin-bottom: 20px; }
+#snap7, #snap8, #snap9, #snap10, #snap11 { width: 15%; margin-bottom: 20px; }
+
+/* تبلت: هر ردیف 3 کارت، 4 ردیف */
+@media (max-width: 1024px) {
+  #snap1, #snap2, #snap3, #snap4, #snap5, #snap6, #snap7, #snap8, #snap9, #snap10, #snap11 {
+    width: 30%;
+    margin-bottom: 15px;
+  }
+}
+
+/* موبایل: هر ردیف 2 کارت، 6 ردیف */
+@media (max-width: 768px) {
+  #snap1, #snap2, #snap3, #snap4, #snap5, #snap6, #snap7, #snap8, #snap9, #snap10, #snap11 {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
