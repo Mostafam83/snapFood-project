@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
    #slider::-webkit-scrollbar { display: none; }
   #slider { -ms-overflow-style: none; scrollbar-width: none; }
@@ -16,10 +18,24 @@
     align-items: center;
     justify-content: center;
   }
+  @font-face {
+  font-family: 'iransans';
+  src: url('./assets/fonts/Iranian\ Sans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('./assets/fonts/Vazirmatn-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 </style>
   <title>SnapFood</title>
 </head>
-<body >
+<body style="font-family: 'vazir';">
   <header class="w-screen h-64 flex flex-col z-50 border-b bg-white border-gray-300 border-2 shadow-sm ">
 
     <div class="flex justify-between">
@@ -136,10 +152,10 @@
 
   </header>
 
-  <main class="w-screen min-h-screen flex justify-center py-10 flex-col">
+  <main class="w-screen min-h-screen flex justify-center py-10 flex-col" style="font-family: 'iransans';">
   <div class="w-screen flex justify-center">
     <div class="w-10/12">
-    <h2 class="text-lg font-bold text-gray-600 mb-6 mr-6">دسته بندی ها</h2>
+    <h2 class="text-lg font-bold text-gray-600 mb-6 mr-6 ">دسته بندی ها</h2>
     <div id="category-container" class="flex flex-wrap justify-center gap-5">
       <!-- کارت‌ها با JS اضافه می‌شوند -->
     </div>

@@ -205,6 +205,7 @@ let timeLeft = 5 * 60 * 60;
       currentIndex += cardsPerView;
       updateSlider();
     }
+    
   });
 
   prevBtn1.addEventListener("click", () => {
